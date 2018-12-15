@@ -2,7 +2,7 @@ server:
   port: 8761
 eureka:
   client:
-    register-with-eureka: false #ÊÇ·ñ½«×Ô¼º×¢²áµ½eureka ServerÖĞÈ¥ÓÉÓÚ±¾Éí¾ÍÊÇServerËùÒÔ²»ĞèÒª×¢²á¡£
-    fetch-registry: false #ÊÇ·ñĞèÒª´Óeureka ServerÖĞ»ñÈ¡·şÎñĞÅÏ¢£¬ÓÉÓÚ×ÔÉí¾ÍÊÇServerËùÒÔ²»ĞèÒªÍ¬²½¡£
+    register-with-eureka: false #æ˜¯å¦å°†è‡ªå·±æ³¨å†Œåˆ°eureka Serverä¸­å»ç”±äºæœ¬èº«å°±æ˜¯Serveræ‰€ä»¥ä¸éœ€è¦æ³¨å†Œã€‚
+    fetch-registry: false #æ˜¯å¦éœ€è¦ä»eureka Serverä¸­è·å–æœåŠ¡ä¿¡æ¯ï¼Œç”±äºè‡ªèº«å°±æ˜¯Serveræ‰€ä»¥ä¸éœ€è¦åŒæ­¥ã€‚
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/ # ÉèÖÃÓÚeureka½»»¥µÄµØÖ·£¬²éÑ¯·şÎñºÍ×¢²á·şÎñ¶¼ĞèÒªÒÀÀµÕâ¸öµØÖ·Ä¬ÈÏÎªµ±Ç°ÅäÖÃµØÖ·£¬¿ÉÒÔÅäÖÃ¶à¸ö£»Ê¹ÓÃ¶ººÅ·Ö¸ô¡£
+      defaultZone: http://localhost:8761/eureka/ # è®¾ç½®äºeurekaäº¤äº’çš„åœ°å€ï¼ŒæŸ¥è¯¢æœåŠ¡å’Œæ³¨å†ŒæœåŠ¡éƒ½éœ€è¦ä¾èµ–è¿™ä¸ªåœ°å€é»˜è®¤ä¸ºå½“å‰é…ç½®åœ°å€ï¼Œå¯ä»¥é…ç½®å¤šä¸ªï¼›ä½¿ç”¨é€—å·åˆ†éš”ã€‚

@@ -1,6 +1,9 @@
+server:
+  port: 8081
+
 spring:
   application:
-    name: client1
+    name: movie
 eureka:
   client:
     service-url:
