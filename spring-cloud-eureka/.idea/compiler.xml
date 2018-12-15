@@ -6,18 +6,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-cloud-eureka-client-movie" />
-        <module name="spring-cloud-eureka-client-user" />
-        <module name="spring-cloud-eureka-server" />
+        <module name="consumer-movie" />
+        <module name="eureka-server-master" />
+        <module name="provider-user" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="consumer-movie" options="-parameters" />
+      <module name="eureka-server-master" options="-parameters" />
+      <module name="provider-user" options="-parameters" />
       <module name="spring-cloud-eureka" options="-parameters" />
-      <module name="spring-cloud-eureka-client-movie" options="-parameters" />
-      <module name="spring-cloud-eureka-client-user" options="-parameters" />
-      <module name="spring-cloud-eureka-server" options="-parameters" />
     </option>
   </component>
 </project>
