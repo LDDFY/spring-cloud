@@ -29,6 +29,7 @@
 
     <modules>
         <module>eureka-server-master</module>
+        <module>eureka-server-slave</module>
         <module>consumer-movie</module>
         <module>provider-user</module>
     </modules>

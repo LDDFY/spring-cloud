@@ -1,0 +1,20 @@
+server:
+  port: 8762
+
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: user
+      password: password
+
+eureka:
+  instance:
+    hostname: peer2
+  client:
+    register-with-eureka: false #是否将自己注册到eureka Server中去由于本身就是Server所以不需要注册。
+    fetch-registry: false #是否需要从eureka Server中获取服务信息，由于自身就是Server所以不需要同步。
+    service-url:
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@peer1:8761/eureka/ # 设置于eureka交互的地址，查询服务和注册服务都需要依赖这个地址默认为当前配置地址，可以配置多个；使用逗号分隔。当spring开启security安全认证时注册需要在url中指定用户名和密码的值,高版本可能还需要禁用csrf
+

@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/SpringCloudEureka-Server/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloudEureka-Client/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-eureka-client-user/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-server-slave/pom.xml" />
       </list>
     </option>
   </component>
