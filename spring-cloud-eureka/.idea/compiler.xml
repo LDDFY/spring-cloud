@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="consumer-movie" />
+        <module name="consumer-movie-ribbon" />
         <module name="eureka-server-master" />
         <module name="eureka-server-slave" />
         <module name="provider-user" />
@@ -16,6 +17,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="consumer-movie" options="-parameters" />
+      <module name="consumer-movie-ribbon" options="-parameters" />
       <module name="eureka-server-master" options="-parameters" />
       <module name="eureka-server-slave" options="-parameters" />
       <module name="provider-user" options="-parameters" />

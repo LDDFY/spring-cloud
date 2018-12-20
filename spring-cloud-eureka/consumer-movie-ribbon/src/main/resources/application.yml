@@ -1,0 +1,10 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: movie
+user:
+  ribbon:
+    listOfServers: localhost:8080,localhost:8090
+    # NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #使用配置设置默认路由选取算法

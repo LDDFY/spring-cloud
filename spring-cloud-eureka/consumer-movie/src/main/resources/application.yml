@@ -6,6 +6,8 @@ spring:
     name: movie
 eureka:
   client:
+    healthcheck:
+      enabled: true #将应用的健康检查信息传递到eureka中去
     service-url:
       defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/
   instance:

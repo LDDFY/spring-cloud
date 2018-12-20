@@ -3,18 +3,16 @@ package springcloud.consumer.movie;
 import com.netflix.loadbalancer.IRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 import springcloud.consumer.movie.config.MyRule;
 
-//@EnableDiscoveryClient
-@EnableDiscoveryClient
 @SpringBootApplication
-public class ConsumerMovieApplication {
+public class ConsumerMovieApplicationRibbon {
+
     public static void main(String[] args) {
-        SpringApplication.run(ConsumerMovieApplication.class, args);
+        SpringApplication.run(ConsumerMovieApplicationRibbon.class, args);
     }
 
     @Bean
@@ -22,7 +20,6 @@ public class ConsumerMovieApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
-
 
     @Bean
     public IRule iRule() {

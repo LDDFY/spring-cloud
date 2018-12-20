@@ -32,5 +32,6 @@
         <module>eureka-server-slave</module>
         <module>consumer-movie</module>
         <module>provider-user</module>
+        <module>consumer-movie-ribbon</module>
     </modules>
 </project>
