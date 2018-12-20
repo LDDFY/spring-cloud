@@ -1,0 +1,13 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: movie
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@peer1:8761/eureka/,http://user:password@peer2:8762/eureka/
+  instance:
+    prefer-ip-address: true # 当鼠标放到实例的地址时显示链接为IP地址
+    instance-id: ${spring.cloud.client.hostname}:${spring.application.name}:${spring.application.instance_id:${server.port}} #eureka 注册实例名称格式
