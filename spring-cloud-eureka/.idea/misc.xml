@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/spring-cloud-eureka-client-user/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server-slave/pom.xml" />
         <option value="$PROJECT_DIR$/spring-cloud-feign/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-cloud-feign-customer/pom.xml" />
       </list>
     </option>
   </component>
